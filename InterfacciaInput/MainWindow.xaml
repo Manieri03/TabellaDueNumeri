@@ -1,0 +1,46 @@
+﻿<Window x:Class="InterfacciaInput.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:InterfacciaInput"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF62F4D7" Offset="0"/>
+                <GradientStop Color="#FFB3F3D6" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+
+        <Rectangle HorizontalAlignment="Left" Height="160" Margin="431,191,0,0" Stroke="Black" VerticalAlignment="Top" Width="102">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="White" Offset="0"/>
+                    <GradientStop Color="#FF8FFFD9" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+
+        <TextBox x:Name="txtnum1" HorizontalAlignment="Left" Height="23" Margin="212,86,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="104"/>
+        <TextBox x:Name="txtnum2" HorizontalAlignment="Left" Height="23" Margin="431,86,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="102"/>
+        <Label Content="INSERISCI DUE NUMERI" HorizontalAlignment="Left" Height="32" Margin="264,0,0,354" VerticalAlignment="Bottom" Width="232" FontFamily="Ink Free" FontSize="18" FontWeight="Bold"/>
+        <Rectangle HorizontalAlignment="Left" Height="10" Margin="0,10,-0.4,0" Stroke="Black" VerticalAlignment="Top" Width="794">
+            <Rectangle.Fill>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="White" Offset="0"/>
+                    <GradientStop Color="#FF8FFFD9" Offset="1"/>
+                </LinearGradientBrush>
+            </Rectangle.Fill>
+        </Rectangle>
+        <Label Content="MEDIA" HorizontalAlignment="Left" Margin="252,308,0,0" VerticalAlignment="Top" FontFamily="Ink Free" FontSize="16"/>
+        <Label Content="MASSIMO" HorizontalAlignment="Left" Margin="231,201,0,0" VerticalAlignment="Top" FontFamily="Ink Free" FontSize="16"/>
+        <Label Content="MINIMO" HorizontalAlignment="Left" Margin="236,254,0,0" VerticalAlignment="Top" FontFamily="Ink Free" FontSize="16"/>
+        <Label x:Name="lblmax" Content="" HorizontalAlignment="Left" Height="30" Margin="449,201,0,0" VerticalAlignment="Top" Width="84"/>
+        <Label x:Name="lblmin" Content="" HorizontalAlignment="Left" Height="31" Margin="449,254,0,0" VerticalAlignment="Top" Width="84"/>
+        <Label x:Name="lblmed" Content="" HorizontalAlignment="Left" Height="31" Margin="449,307,0,0" VerticalAlignment="Top" Width="84"/>
+        <Button Content="CALCOLA" HorizontalAlignment="Left" Height="36" Margin="336,120,0,0" VerticalAlignment="Top" Width="78" Background="#FF3A9782" BorderBrush="White" Foreground="#FFB5FFEE" FontWeight="Bold" Click="Button_Click"/>
+
+    </Grid>
+</Window>

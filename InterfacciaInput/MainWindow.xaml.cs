@@ -31,7 +31,7 @@ namespace InterfacciaInput
             double min;
             double num1 = int.Parse(txtnum1.Text);
             double num2 = int.Parse(txtnum2.Text);
-            if (num1 >= num2)
+            if(num1 >= num2)
             {
                 max = num1;
                 min = num2;
